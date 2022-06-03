@@ -1,0 +1,23 @@
+{
+    "kafka_host":"localhost:3000",
+    "kafka_port": 9092,
+    "port":3000,
+    "host:events":"http://localhost:3000/events",
+    "topics":[
+        "POC_messages"
+    ],
+    "batch":[
+        {
+            "topic":"consumer1",
+            "messages":[{"value":"Hello"}]
+        },
+        {
+            "topic":"consumer2",
+            "messages":[{"value":"World"}]
+        },
+        {
+            "topic":"consumer3",
+            "messages":[{"value":"People"}]
+        }
+    ]
+}

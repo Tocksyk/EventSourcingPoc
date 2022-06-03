@@ -1,0 +1,25 @@
+{
+  "name": "eventsourcing-kafka-poc",
+  "version": "1.0.0",
+  "description": "Kafka POC for eventbased message queing",
+  "main": "server.js",
+  "scripts": {
+    "kafka:start": "sudo docker-compose -f kafka_broker/docker-compose.yml up -d",
+    "kafka:stop": "sudo docker-compose -f kafka_broker/docker-compose.yml down",
+    "kafka:delete": "sudo docker-compose -f kafka_broker/docker-compose.yml down -v",
+    "consumer:poc":"node consumer/consumer.js",
+    "start": "node server.js",
+    "events:start": "node ./events/generate_events.js",
+    "consumer:bi":"node consumer/service_consumer.js",
+    "ab_testing":"ab -r -n 100000 -c 5000  -p ./tests/abData.json -T application/json http://localhost:3000/producer"
+  },
+  "author": "Sameed Ansari",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "kafkajs": "^1.16.0"
+  }
+}

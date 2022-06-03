@@ -1,0 +1,180 @@
+
+> eventsourcing-kafka-poc@1.0.0 ab_testing /home/hp/Documents/EventSourcing-Kafka-POC
+> ab -n 100000 -c 5000  -p ./tests/abData.json -T application/json http://localhost:3000/producer
+
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Total of 67602 requests completed
+
+> eventsourcing-kafka-poc@1.0.0 ab_testing /home/hp/Documents/EventSourcing-Kafka-POC
+> ab -n 100000 -c 5000  -p ./tests/abData.json -T application/json http://localhost:3000/producer
+
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3000
+
+Document Path:          /producer
+Document Length:        12 bytes
+
+Concurrency Level:      5000
+Time taken for tests:   30.458 seconds
+Complete requests:      100000
+Failed requests:        99999
+   (Connect: 0, Receive: 0, Length: 99999, Exceptions: 0)
+Total transferred:      14590009 bytes
+Total body sent:        17400000
+HTML transferred:       1590009 bytes
+Requests per second:    3283.16 [#/sec] (mean)
+Time per request:       1522.922 [ms] (mean)
+Time per request:       0.305 [ms] (mean, across all concurrent requests)
+Transfer rate:          467.79 [Kbytes/sec] received
+                        557.88 kb/s sent
+                        1025.67 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  732 2102.5     13   15497
+Processing:   139  469 226.4    408    7518
+Waiting:       27  390 200.4    340    7466
+Total:        146 1201 2184.4    491   16475
+
+Percentage of the requests served within a certain time (ms)
+  50%    491
+  66%    749
+  75%   1481
+  80%   1557
+  90%   1959
+  95%   3664
+  98%   8248
+  99%  16104
+ 100%  16475 (longest request)
+
+> eventsourcing-kafka-poc@1.0.0 ab_testing /home/hp/Documents/EventSourcing-Kafka-POC
+> ab -n 100000 -c 5000  -p ./tests/abData.json -T application/json http://localhost:3000/producer
+
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Total of 20983 requests completed
+
+> eventsourcing-kafka-poc@1.0.0 ab_testing /home/hp/Documents/EventSourcing-Kafka-POC
+> ab -n 100000 -c 5000  -p ./tests/abData.json -T application/json http://localhost:3000/producer
+
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3000
+
+Document Path:          /producer
+Document Length:        12 bytes
+
+Concurrency Level:      5000
+Time taken for tests:   25.776 seconds
+Complete requests:      100000
+Failed requests:        99999
+   (Connect: 0, Receive: 0, Length: 99999, Exceptions: 0)
+Total transferred:      14590577 bytes
+Total body sent:        17400000
+HTML transferred:       1590577 bytes
+Requests per second:    3879.54 [#/sec] (mean)
+Time per request:       1288.814 [ms] (mean)
+Time per request:       0.258 [ms] (mean, across all concurrent requests)
+Transfer rate:          552.78 [Kbytes/sec] received
+                        659.22 kb/s sent
+                        1212.00 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  556 1183.6     12   15242
+Processing:   145  471 373.4    387    5743
+Waiting:       27  395 358.9    310    5741
+Total:        155 1027 1317.1    424   15416
+
+Percentage of the requests served within a certain time (ms)
+  50%    424
+  66%    749
+  75%   1485
+  80%   1609
+  90%   2074
+  95%   3602
+  98%   4193
+  99%   7790
+ 100%  15416 (longest request)
+
+> eventsourcing-kafka-poc@1.0.0 ab_testing /home/hp/Documents/EventSourcing-Kafka-POC
+> ab -n 100000 -c 5000  -p ./tests/abData.json -T application/json http://localhost:3000/producer
+
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Total of 97335 requests completed
+
+> eventsourcing-kafka-poc@1.0.0 ab_testing /home/hp/Documents/EventSourcing-Kafka-POC
+> ab -r -n 100000 -c 5000  -p ./tests/abData.json -T application/json http://localhost:3000/producer
+
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3000
+
+Document Path:          /producer
+Document Length:        12 bytes
+
+Concurrency Level:      5000
+Time taken for tests:   32.120 seconds
+Complete requests:      100000
+Failed requests:        99999
+   (Connect: 0, Receive: 0, Length: 99999, Exceptions: 0)
+Total transferred:      14591033 bytes
+Total body sent:        17400000
+HTML transferred:       1591033 bytes
+Requests per second:    3113.29 [#/sec] (mean)
+Time per request:       1606.016 [ms] (mean)
+Time per request:       0.321 [ms] (mean, across all concurrent requests)
+Transfer rate:          443.61 [Kbytes/sec] received
+                        529.02 kb/s sent
+                        972.63 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  780 2042.2      8   15352
+Processing:   158  547 421.9    487   19951
+Waiting:       25  402 405.7    332   19815
+Total:        161 1328 2177.7    535   20997
+
+Percentage of the requests served within a certain time (ms)
+  50%    535
+  66%    813
+  75%   1572
+  80%   1690
+  90%   2222
+  95%   4171
+  98%   8359
+  99%  16055
+ 100%  20997 (longest request)
